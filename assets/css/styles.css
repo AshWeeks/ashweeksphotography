@@ -1,0 +1,30 @@
+* {
+    text-decoration: none;
+}
+.navbar {
+    background-color: black;
+    font-family: sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navdiv ul {
+    display: flex;
+    margin-left: auto;
+}
+li {
+    list-style: none;
+    display: inline-block;
+    font-family: EB Garamond, serif;
+    font-weight: 100px;
+    font-size: 20px;
+}
+li a {
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+}
