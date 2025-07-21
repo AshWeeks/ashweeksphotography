@@ -24,7 +24,7 @@ body {
     margin-left: 10px;
     justify-content: left;
     position: absolute;
-    top: 250px;
+    top: 270px;
     left: 10px;
 }
 
@@ -58,10 +58,6 @@ img {
     width: 100%;
 }
 
-footer:hover{
-    background-color: darkgreen;
-}
-
 .fa-brands {
     color: white;
     font-size: 30px;
@@ -78,8 +74,66 @@ footer:hover{
     transform: scale(1.2);
 }
 
+.about-me-heading {
+    color: white;
+    font-family: EB Garamond, serif;
+    font-size: 40px;
+    text-align: center; 
+    margin-top: 40px;
+    margin-left: 10px;
+}
 
+.sub-heading-about-me {
+    color: white;
+    font-family: EB Garamond, serif;
+    font-size: 20px;
+    text-align: center; 
+    margin-top: 10px;
+    margin-left: 10px;
+}
 
+.about-me-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.about-me-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-right: 70%;
+    margin-left: 20px;
+}
+
+.about-me-content {
+    color: white;
+    font-family: EB Garamond, serif;
+    font-size: 16px;
+    text-align: center; 
+    margin-top: 20px;
+    justify-content: left;
+    text-align: left;
+}
+
+.whos-the-photographer {
+    margin-left: 30px;
+    padding-left: 10%;
+    margin-top: 6%;
+    position: absolute;
+}
+.content-intro {
+    justify-content: right;
+    position: relative;
+    margin-left: 100px;
+    padding-left: 30%;
+    margin-right: 25px;
+    font-size: 120%;
+}
 
 .contact {
     color: white;
@@ -157,4 +211,8 @@ li a {
     color: white;
     padding: 10px 15px;
     font-size: 18px;
+}
+
+hr {
+    color: darkslategray;
 }
