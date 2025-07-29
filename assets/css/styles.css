@@ -2,49 +2,50 @@ body {
     background-color: black;
 }
 
+/*home page code*/
+
 .home-page-title {
     color: white;
     font-family: EB Garamond, serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: left;
-    margin-top: 40px;
-    margin-left: 10px;
+    margin-top: 2.5rem;
+    margin-left: 0.625rem;
     padding-left: 5%;
-    padding-top: 100px;
-    position: absolute;
+    padding-top: 6.25rem;
 }
 
 .sub-heading-home-page {
     color: white;
     font-family: EB Garamond, serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: left;
     padding-left: 5%;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 0.625rem;
+    margin-left: 0.625rem;
     justify-content: left;
-    position: absolute;
-    top: 270px;
-    left: 10px;
 }
 
-img {
-    position: relative;
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    padding-left: 70%;
-    margin: 10px;
-    justify-content: right;
+.home-page-title, .sub-heading-home-page {
+    background-image: url(assets\images\52f8df_e3f9a27233d74c01ae2d3eda5b55ce15~mv2.webp);
+    background-size: cover;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
 }
 
 .container {
- display: grid; 
- grid-template-columns: 1fr 1fr 1fr;
+ display: flex;
  column-gap: 5px;
  left: 100px;
 }
+
+/*footer code*/
 
 .footer{
     background-color: black;
@@ -89,96 +90,71 @@ img {
     transform: scale(1.2);
 }
 
+/*Meet the team page code*/
+
 .about-me-heading {
     color: white;
     font-family: EB Garamond, serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center; 
-    margin-top: 40px;
-    margin-left: 10px;
+    margin-top: 2.5rem;
+    margin-left: 0.625rem;
+}
+
+.about-me-content {
+    color: white;
+    font-family: EB Garamond, serif;
+    font-size: 1.25rem;
+    text-align: center; 
+    padding-left: 5%;
+    padding-top: 2.5rem;
 }
 
 .about-me-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    padding-left: 5%;
     padding-right: 5%;
 }
 
 .about-me-image img {
-    width: 300px;
-    height: 300px;
+    width: 15rem;
+    height: 15rem;
+    margin-left: 1.25rem;
     border-radius: 50%;
-    object-fit: cover;
-    padding-right: 70%;
-    margin-left: 20px;
+    transition: transform 0.3s ease;
 }
 
-.about-me-content {
-    color: white;
-    font-family: EB Garamond, serif;
-    font-size: 16px;
-    text-align: center; 
-    margin-top: 20px;
-    justify-content: left;
-    text-align: left;
-}
-
-.whos-the-photographer {
-    margin-left: 30px;
-    padding-left: 10%;
-    margin-top: 6%;
-    position: absolute;
-}
-.content-intro {
-    justify-content: right;
-    position: relative;
-    margin-left: 100px;
-    padding-left: 30%;
-    margin-right: 25px;
-    font-size: 120%;
-}
+/*portfolio page code*/
 
 .portfolio-heading {
     color: white;
     font-family: EB Garamond, serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center; 
-    margin-top: 40px;
-    margin-left: 10px;
-    padding-left: 5%;
+    margin-top: 2.5rem;
+    margin-left: 0.625rem;
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 40px;
-  max-width: 900px;
-  margin-right: 350px;
-}
-
-.gallery-item {
-  transform: translateY(50px);
-  transition: transform 0.8s ease, opacity 0.8s ease;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 0 5%;
 }
 
 .gallery-item img {
-  width: 100%;
-  height: auto;
-  display: block; /* fixes spacing issues */
-  object-fit: cover;
-  transition: transform 0.4s ease, filter 0.4s ease;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+    width: 18.75rem;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
-.gallery-item:hover img {
-  transform: scale(1.03);
+.gallery-item img:hover {
+    transform: scale(1.05);
 }
+
+/*contact code*/
 
 .contact {
     color: white;
@@ -229,6 +205,9 @@ p a:active{
 * {
     text-decoration: none;
 }
+
+/* navbar code*/
+
 .navbar {
     background-color: black;
     font-family: sans-serif;
@@ -260,4 +239,55 @@ li a {
 
 hr {
     color: darkslategray;
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-page-title {
+        font-size: 1.5rem;
+        padding-left: 2%;
+    }
+    .sub-heading-home-page {
+        font-size: 1rem;
+        padding-left: 2%;
+    }
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-me-title {
+        font-size: 1.5rem;
+        padding-left: 2%;
+    }
+    .about-me-image img {
+        width: 200px;
+        height: auto;
+        border-radius: 100%;
+        justify-content: left;
+        text-align: left;
+        align-items: left;
+    }
+    .about-me-content {
+        font-size: 0.9rem;
+        padding-left: 5%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navdiv {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navdiv ul {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 5%;
+    }
+    
 }
