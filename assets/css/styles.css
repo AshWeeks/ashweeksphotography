@@ -154,6 +154,36 @@ body {
     transform: scale(1.05);
 }
 
+/*services page code*/
+
+.services-heading {
+    color: white;
+    font-family: EB Garamond, serif;
+    font-size: 2.5rem;
+    text-align: center; 
+    margin-top: 2.5rem;
+    margin-left: 0.625rem;
+}
+.sub-heading-services {
+    color: white;
+    font-family: EB Garamond, serif;
+    font-size: 0.625rem;
+    text-align: center; 
+    padding-left: 5%;
+    margin-top: 0.625rem;
+    margin-left: 0.625rem;
+}
+.service-item {
+    color: white;
+    font-family: EB Garamond, serif;
+    font-size: 1.25rem;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    margin: 0.625rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
 /*contact code*/
 
 .contact {
@@ -277,6 +307,14 @@ hr {
         font-size: 0.9rem;
         padding-left: 5%;
         flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-heading {
+        font-size: 1.5rem;
+        padding-left: 2%;
+    }
+    .service-main-content {
         flex-direction: column;
         align-items: center;
     }
