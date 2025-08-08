@@ -184,6 +184,68 @@ body {
     transition: transform 0.3s ease;
 }
 
+/*event page code*/
+
+.events-page-title {
+    color: white;
+    font-family: EB Garamond, serif;
+    font-size: 2.5rem;
+    text-align: center; 
+    margin-top: 2.5rem;
+    margin-left: 0.625rem;
+}
+
+.events-page-subheading {
+    color: white;
+    font-family: EB Garamond, serif;
+    font-size: 1.25rem;
+    text-align: center; 
+    padding-left: 5%;
+    margin-top: 0.625rem;
+    margin-left: 0.625rem;
+}
+
+.event-title {
+    color: white;
+    font-family: EB Garamond, serif;
+    font-size: 1.5rem;
+    text-align: center; 
+    margin-top: 1.25rem;
+}
+
+.event-subheading {
+    color: white;
+    font-family: EB Garamond, serif;
+    font-size: 1rem;
+    text-align: center; 
+    padding-left: 5%;
+    margin-top: 0.625rem;
+    margin-left: 0.625rem;
+    margin-bottom: 1rem;
+}
+
+.event-card-1 {
+    background-color: black;
+    color: white;
+    font-family: EB Garamond, serif;
+    font-size: 1.25rem;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    margin: 0.625rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.event-link {
+    color: white;
+    text-decoration: none;
+}
+
+.event-link:hover {
+    color: lightgrey;
+    transform: scale(1.05);
+}
+
 /*contact code*/
 
 .contact {
